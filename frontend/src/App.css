@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Oswald:wght@200..700&family=Poppins&display=swap');
+
+.jersey-25-regular {
+  font-family: "Jersey 25", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.App {
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  color: white;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App-header {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  color: #9fff1a;
+  font-size: 4.5rem;
+  margin: 0;
+  font-family: "Jersey 25", serif;
+  animation: blink-logo 2s infinite;
+}
+/* @keyframes blink-logo {
+  0%, 100% { 
+    opacity: 1;
+    text-shadow: 0 0 5px #9fff1a;
+  }
+  50% { 
+    opacity: 0.7;
+    text-shadow: 0 0 10px #9fff1a;
+  }
+} */
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 2rem;
+  font-family: "Jersey 25", serif;
+}
+
+
+.App-header h2{
+  display: flex;
+
+  height: 100%;
+}
+
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #9fff1a;
+  white-space: nowrap;
+  animation: typing 4s steps(50, end),
+             blink-caret 0.75s step-end infinite;
+  margin: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: #9fff1a }
+}
+
+.main-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+label {
+  height: 100%;
+  color: white;
+  font-size: 1.75rem;
+  font-family: "Jersey 25", serif;
+  margin-top: 0.2rem;
+}
+
+.model-select, .token-input {
+  background-color: #333;
+  border: 1px solid #9fff1a;
+  color: white;
+  padding: 0.5rem;
+  min-width: 200px;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.generate-button {
+  background-color: #9fff1a;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.generate-button:hover {
+  background-color: #8ae619;
+}
+
+.table-container {
+  border: 1px solid #9fff1a;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.api-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.api-table th {
+  background-color: #333;
+  padding: 1rem;
+  text-align: left;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+}
+
+.api-table td {
+  padding: 1rem;
+  background-color: #444;
+  font-family: 'Poppins', sans-serif;
+}
+
+.api-table th, .api-table td {
+  border: 1px solid #9fff1a;
+}
